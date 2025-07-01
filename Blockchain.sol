@@ -28,6 +28,7 @@ contract Blockchain {
 
     event StudentEnrolled(address indexed studentAddress, uint idnumber);
     event GradeAssigned(address indexed studentAddress, uint grade);
+    event TuitionPaid(address indexed studentAddress, uint amount);
 
     constructor() {
         teacher = msg.sender;
