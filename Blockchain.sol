@@ -15,6 +15,7 @@ contract Blockchain {
     }
 
     mapping(address => Student) public students;
+    mapping(address => bool) public tuitionPaid;
 
     modifier isTeacher() {
         require(msg.sender == teacher, "You are not the teacher!");
